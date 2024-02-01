@@ -10,7 +10,7 @@ function AuthComponent() {
     <div>
       {isAuthenticate ? (
         <div id="current-user">
-          Current user: {user}, <h1>isAuthenticate:  Yes</h1>
+         <h3> Current user: {user},</h3>  <h3>isAuthenticate:  Yes</h3>
         </div>
       ) : (
         <button id="login-btn" onClick={() => login("Imran")}>
