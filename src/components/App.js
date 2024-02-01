@@ -1,2 +1,23 @@
-<p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>
+import React from "react";
 
+import AppProvider from "../components/Context/ContextProvider";
+import AuthComponent from "./AuthComponent";
+import Shoplist from "./Shoplist";
+
+function App(){
+
+    return (
+
+        <div>
+            {/* <h1>Imran</h1> */}
+
+    <AppProvider>
+      <AuthComponent />
+      <Shoplist />
+    </AppProvider>
+
+        </div>
+    )
+}
+
+export default App;
